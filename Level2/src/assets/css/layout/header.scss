@@ -1,0 +1,13 @@
+.header{
+    @include breakpoint(940) { width:80%; background-color: red; }
+    &__menu{
+        background-color: red;
+        &:hover{
+            background-color: red;
+        }
+        &::before{
+            content:"";
+        }
+        @include breakpoint(940) { width:80%; background-color: red; }
+    }
+}

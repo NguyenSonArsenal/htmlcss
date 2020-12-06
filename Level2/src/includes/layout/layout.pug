@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title LOGISTIC SHOP
+
+    //- Logo Icon
+    link(rel="shortcut icon" type="image/x-icon" href="")
+
+    //- Style CSS
+    link(rel="stylesheet" type="text/css" href="./assets/css/main.css")
+
+    block head
+
+  body
+    include includes/header.pug 
+    block pages
+    include includes/header.pug 
+    block script
+
+
+    //- jQuery
+    <script src="./assets/js/jquery.min.js"></script>
+
+    //- Owl Carousel
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
+    //- Java Script
+    script(src="./assets/js/main.js")

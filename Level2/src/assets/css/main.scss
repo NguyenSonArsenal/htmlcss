@@ -1,0 +1,48 @@
+/* ===============================================================================
+   Table Of Content
+   ===============================================================================
+   1. General
+   2. Layout
+   3. Components
+   4. Pages
+*/
+
+/* ===============================================================================
+   1. General
+   ===============================================================================
+*/
+@import './layout/owl-carousel/owl.carousel.min.css';
+
+@import './fonts/fonts.scss';
+@import './layout/grid/grid.scss';
+@import './base/base.scss';
+@import './animation/animation.scss';
+
+/* ===============================================================================
+   2. Layout
+   ===============================================================================
+*/
+@import './layout/header/header.scss';
+@import './layout/footer/footer.scss';
+
+/* ===============================================================================
+   3. Components
+   ===============================================================================
+*/
+@import './components/shop/shop-breadcumb/shop-breadcumb.scss';
+@import './components/shop/shop-category/shop-category.scss';
+@import './components/contact/contact-breadcumb/contact-breadcumb.scss';
+@import './components/contact/contact-map/contact-map.scss';
+@import './components/contact/contact-content/contact-content.scss';
+@import './components/contact/contact-client/contact-client.scss';
+@import './components/shop/shop-products/shop-products.scss';
+@import './components/shop/shop-pagination/shop-pagination.scss';
+@import './components/shop/shop-info/shop-info.scss';
+
+/* ===============================================================================
+   4. Pages
+   ===============================================================================
+*/
+
+@import './pages/shop/shop.scss';
+
