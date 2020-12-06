@@ -1,0 +1,66 @@
+extend ../includes/layout/layout.pug
+block pages
+  div.section_breadcrumb
+    div.container
+      div.wrapper_breadcrumb
+        div.row.align-items-center
+          div.col-md-6
+            div.page-title
+              h1 About Us
+          div.col-md-6
+            ul.breadcrumb__left.justify-content-md-end.d-flex
+              li
+                a(href="javascript:void(0)") Home
+                  span  >
+              li
+                a(href="javascript:void(0)") Pages
+                  span  >
+              li
+                a(href="javascript:void(0)" class="breadcrumb__left-active") About
+
+  div.section.section_who_we_are
+    div.container
+      div.who_we_are
+        div.row.align-items-md-center
+          div.col-md-6
+            div.who_we_are__image
+              img(src="./assets/images/about/about_img.jpg" alt="Images name")
+          div.col-md-6
+            div.heading_s1
+              h2 Who We Are
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur quibusdam enim expedita sed
+                nesciunt incidunt accusamus adipisci officia libero laboriosam!
+              br
+              p Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                vultate cursus a sit amet mauris. Duis sed odio sit amet nibh vultate cursus a sit amet mauris.
+
+  div.section.section_choose_us
+    div.container
+      div.choose_us.text-center
+        div.choose_us__top
+          div.heading_s1
+            h2 Why Choose Us
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            span.d-md-block
+            | sed do eiusmod tempor incididunt ut labore.
+        div.choose_us__bottom
+          div.row
+            div.col-md-4
+              div.choose_us__bottom-item.mb-5.mb-md-0
+                div.bottom-item__img
+                  img(width="50px" src="./assets/images/about/ti-pencil-alt.png" alt="Image Name")
+                h3.f18 Creative Design
+                p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+            div.col-md-4
+              div.choose_us__bottom-item.mb-5.mb-md-0
+                div.bottom-item__img
+                  img(width="50px" src="./assets/images/about/ti-layer.png" alt="Image Name")
+                h3.f18 Flexible Layouts
+                p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+            div.col-md-4
+              div.choose_us__bottom-item.mb-5.mb-md-0
+                div.bottom-item__img
+                  img(width="50px" src="./assets/images/about/ti-layer.png" alt="Image Name")
+                h3.f18 Email Marketing
+                p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form

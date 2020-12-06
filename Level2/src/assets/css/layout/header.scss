@@ -1,3 +1,4 @@
+@import '../common/mixins/breakpoint.scss';
 .header{
     @include breakpoint(940) { width:80%; background-color: red; }
     &__menu{

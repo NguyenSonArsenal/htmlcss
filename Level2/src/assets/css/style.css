@@ -65,6 +65,10 @@ ul, li, ol {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 fieldset {
   border: 0 none;
   margin: 0 auto;

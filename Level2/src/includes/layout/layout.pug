@@ -10,22 +10,30 @@ html
     link(rel="shortcut icon" type="image/x-icon" href="")
 
     //- Style CSS
+    link(rel="stylesheet" type="text/css" href="./assets/vendors/boostrap4/bootstrap4.min.css")
+    link(rel="stylesheet" type="text/css" href="./assets/vendors/font-awesome/css/font-awesome.min.css")
+    link(rel="stylesheet" type="text/css" href="./assets/vendors/font_roboto.css")
+    link(rel="stylesheet" type="text/css" href="./assets/vendors/font_Poppins.css")
+    link(rel="stylesheet" type="text/css" href="./assets/css/flaticon.css")
+    link(rel="stylesheet" type="text/css" href="./assets/css/main.css")
+    link(rel="stylesheet" type="text/css" href="./assets/css/style.css")
+    link(rel="stylesheet" type="text/css" href="./assets/css/responsive.css")
     link(rel="stylesheet" type="text/css" href="./assets/css/main.css")
 
     block head
 
   body
-    include includes/header.pug 
-    block pages
-    include includes/header.pug 
-    block script
-
+    div.app
+        include ./header.pug
+        block pages
+        include ./footer.pug
 
     //- jQuery
     <script src="./assets/js/jquery.min.js"></script>
-
     //- Owl Carousel
     <script src="./assets/js/owl.carousel.min.js"></script>
-
+    <script src="./assets/vendors/boostrap4/bootstrap4.js"></script>
     //- Java Script
     script(src="./assets/js/main.js")
+
+    block script

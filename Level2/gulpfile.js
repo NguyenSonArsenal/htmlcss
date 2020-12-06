@@ -13,7 +13,7 @@ gulp.task('html', () => {
 var pug = require('gulp-pug');
 
 gulp.task('pug', function buildHTML() {
-	return gulp.src('./src/*.pug')
+	return gulp.src('./src/pug/*.pug')
 		.pipe(pug({
 			pretty: true
 		}))
@@ -80,6 +80,12 @@ gulp.task('imageMin', () => {
 		.pipe(gulp.dest('dist/assets/images'))
 });
 
+gulp.task('vendorMin', () => {
+    return gulp.src('./src/assets/vendors/**/*')
+        .pipe(imageMin())
+        .pipe(gulp.dest('dist/assets/vendors'))
+});
+
 gulp.task('iconMin', () => {
 	return gulp.src('./src/assets/icons/**/*')
 		.pipe(imageMin())
@@ -114,4 +120,4 @@ gulp.task('serve', () => {
 
 //Gulp-Method
 gulp.task('dev', gulp.series('serve'));
-gulp.task('build', gulp.series('html', 'cleanCSS', 'minifyJS', 'imageMin', 'iconMin'));
+gulp.task('build', gulp.series('html', 'sass', 'pug', 'cleanCSS', 'vendorMin', 'minifyJS', 'imageMin', 'iconMin'));
