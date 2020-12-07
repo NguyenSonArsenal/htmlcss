@@ -86,6 +86,12 @@ gulp.task('vendorMin', () => {
         .pipe(gulp.dest('dist/assets/vendors'))
 });
 
+gulp.task('fontMin', () => {
+  return gulp.src('./src/assets/fonts/**/*')
+    .pipe(imageMin())
+    .pipe(gulp.dest('dist/assets/fonts'))
+});
+
 gulp.task('iconMin', () => {
 	return gulp.src('./src/assets/icons/**/*')
 		.pipe(imageMin())
@@ -120,4 +126,4 @@ gulp.task('serve', () => {
 
 //Gulp-Method
 gulp.task('dev', gulp.series('serve'));
-gulp.task('build', gulp.series('html', 'sass', 'pug', 'cleanCSS', 'vendorMin', 'minifyJS', 'imageMin', 'iconMin'));
+gulp.task('build', gulp.series('html', 'sass', 'fontMin', 'pug', 'cleanCSS', 'vendorMin', 'minifyJS', 'imageMin', 'iconMin'));

@@ -1,23 +1,86 @@
-<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>LOGISTIC SHOP</title>
+  <link rel="shortcut icon" type="image/x-icon" href=""/>
+  <link rel="stylesheet" type="text/css" href="./assets/vendors/boostrap4/bootstrap4.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/vendors/font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/fonts/themify-icons/themify-icons.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/vendors/font_roboto.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/vendors/font_Poppins.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/vendors/ionicons.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/flaticon.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css"/>
+</head><!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LOGISTIC SHOP</title>
-    <link rel="shortcut icon" type="image/x-icon" href="">
-    <link rel="stylesheet" type="text/css" href="./assets/vendors/boostrap4/bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/vendors/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/vendors/font_roboto.css">
-    <link rel="stylesheet" type="text/css" href="./assets/vendors/font_Poppins.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/flaticon.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-  </head>
   <body>
     <div class="app">
+      <div class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="header__top-left mb-2 mb-md-0">
+                  <ul class="ul">
+                    <li class="d-inline-block header-left__nation">
+                      <select name="nation" style="appearance: none;">
+                        <option value="USD"><img src="./assets/images/layout/header/eng.png" alt="Images name">English</option>
+                        <option value="USD">France</option>
+                        <option value="USD">United States</option>
+                      </select>
+                    </li>
+                    <li class="d-inline-block header-left__currency">
+                      <div class="currency__custom_select">
+                        <select name="currency" style="display: none">
+                          <option value="USD">USD</option>
+                          <option value="USD">EUR</option>
+                          <option value="USD">GBR</option>
+                        </select>
+                        <div class="select-selected">USD</div>
+                        <div class="select-currency__list">
+                          <ul class="currency__list-list">
+                            <li class="mb-2">USD</li>
+                            <li class="mb-2">EUR</li>
+                            <li>GBR</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="d-inline-block header-left__contact_detail"><a href="javascript:void(0)"><i class="ti-mobile"></i>&nbsp 123-456-7890</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="header__top-right text-center text-md-right">
+                  <ul>
+                    <li><a href="javascript:void(0)"><i class="ti-control-shuffle"></i>&nbsp Compare</a></li>
+                    <li><a href="javascript:void(0)"><i class="ti-heart"></i>&nbsp Wishlist</a></li>
+                    <li><a href="javascript:void(0)"><i class="ti-user"></i>&nbsp Login</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="header__bottom">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand"><img src="./assets/images/layout/header/logo.png" width="175px"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active"><a class="nav-link">Home</a></li>
+                  <li class="nav-item active"><a class="nav-link">Pages</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
       <div class="section_breadcrumb">
         <div class="container">
           <div class="wrapper_breadcrumb">
@@ -47,7 +110,7 @@
               </div>
               <div class="col-md-6">
                 <div class="heading_s1">
-                  <h2>Who We Are</h2>
+                  <h2 class="mb-3">Who We Are</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur quibusdam enim expedita sed
                     <nesciunt>incidunt accusamus adipisci officia libero laboriosam!</nesciunt>
                   </p><br>
@@ -172,5 +235,6 @@
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/vendors/boostrap4/bootstrap4.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/common.js"></script>
   </body>
 </html>

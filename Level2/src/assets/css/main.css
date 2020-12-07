@@ -10,30 +10,10 @@
    1. General
    ===============================================================================
 */
-/**
-   * @param $direction: horizontal vertical both
-   example : @include center(both) || @include center(horizontal) || @include center(vertical)
-   */
 /* ===============================================================================
    2. Layout
    ===============================================================================
 */
-@media only screen and (max-width: 940px) {
-  .header {
-    width: 80%;
-    background-color: red; } }
-
-.header__menu {
-  background-color: red; }
-  .header__menu:hover {
-    background-color: red; }
-  .header__menu::before {
-    content: ""; }
-  @media only screen and (max-width: 940px) {
-    .header__menu {
-      width: 80%;
-      background-color: red; } }
-
 /* ===============================================================================
    3. Components
    ===============================================================================
