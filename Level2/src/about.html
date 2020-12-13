@@ -27,11 +27,14 @@
                 <div class="header__top-left mb-2 mb-md-0">
                   <ul class="ul">
                     <li class="d-inline-block header-left__nation">
-                      <select name="nation" style="appearance: none;">
-                        <option value="USD"><img src="./assets/images/layout/header/eng.png" alt="Images name">English</option>
-                        <option value="USD">France</option>
-                        <option value="USD">United States</option>
-                      </select>
+                      <div class="nation__custom_select">
+                        <div class="select-selected nation-selected"><img src="./assets/images/layout/header/eng.png" alt="Images name"><span class="select-selected">English</span></div>
+                        <ul class="nation__list-list" id="nation__list-list">
+                          <li class="mb-3"><img src="./assets/images/layout/header/eng.png" alt="Images name">English</li>
+                          <li class="mb-3"><img src="./assets/images/layout/header/fn.png" alt="Images name">France</li>
+                          <li><img src="./assets/images/layout/header/us.png" alt="Images name">United States</li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="d-inline-block header-left__currency">
                       <div class="currency__custom_select">
@@ -42,9 +45,9 @@
                         </select>
                         <div class="select-selected">USD</div>
                         <div class="select-currency__list">
-                          <ul class="currency__list-list">
-                            <li class="mb-2">USD</li>
-                            <li class="mb-2">EUR</li>
+                          <ul class="currency__list-list" id="currency__list-list">
+                            <li class="mb-3">USD</li>
+                            <li class="mb-3">EUR</li>
                             <li>GBR</li>
                           </ul>
                         </div>

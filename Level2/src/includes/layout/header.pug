@@ -6,12 +6,21 @@ div.header
           div.header__top-left.mb-2.mb-md-0
             ul.ul
               li.d-inline-block.header-left__nation
-                select(name="nation" style="appearance: none;")
-                  option(value="USD")
+                div.nation__custom_select
+                  div.select-selected.nation-selected
                     img(src="./assets/images/layout/header/eng.png" alt="Images name")
-                    | English
-                  option(value="USD") France
-                  option(value="USD") United States
+                    span.select-selected English
+                  ul.nation__list-list#nation__list-list
+                    li.mb-3
+                      img(src="./assets/images/layout/header/eng.png" alt="Images name")
+                      | English
+                    li.mb-3
+                      img(src="./assets/images/layout/header/fn.png" alt="Images name")
+                      | France
+                    li
+                      img(src="./assets/images/layout/header/us.png" alt="Images name")
+                      | United States
+
               li.d-inline-block.header-left__currency
                 div.currency__custom_select
                   select(name="currency" style="display: none")
@@ -20,9 +29,9 @@ div.header
                     option(value="USD") GBR
                   div.select-selected USD
                   div.select-currency__list
-                    ul.currency__list-list
-                      li.mb-2 USD
-                      li.mb-2 EUR
+                    ul.currency__list-list#currency__list-list
+                      li.mb-3 USD
+                      li.mb-3 EUR
                       li GBR
               li.d-inline-block.header-left__contact_detail
                 a(href="javascript:void(0)")

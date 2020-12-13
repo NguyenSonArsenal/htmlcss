@@ -116,39 +116,62 @@ label {
    ===============================================================================
 */
 .header {
-  padding: 20px 0;
+  .header__top, .header__bottom {
+    padding: 15px 0;
+  }
   .header__top-left {
-    .ul .header-left__nation {
-      margin-right: 15px;
-      select {
-        border: none;
-        &:focus {
-          outline: none;
+    .ul {
+      .header-left__nation {
+        margin-right: 25px;
+        .nation__custom_select {
+          position: relative;
+          img {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+          .nation__list-list {
+            font-size: 14px;
+            border: 1px solid #dee2e6;
+            color: #333;
+            width: 135px;
+            display: none;
+            z-index: 998;
+            position: absolute;
+            background: white;
+            top: 26px;
+            left: -8px;
+            padding: 8px;
+            li:hover {
+              cursor: pointer;
+            }
+          }
         }
+      }
+      .header-left__currency {
+        margin-right: 25px;
+      }
+    }
+    .select-selected {
+      text-transform: capitalize;
+      font-size: 14px;
+      color: #333;
+      white-space: nowrap;
+      &:hover {
+        cursor: pointer;
+      }
+      &:after {
+        content: "\f3d0";
+        color: #878787;
+        font-family: ionicons;
+        position: absolute;
+        top: 1px;
+        margin-left: 5px;
       }
     }
     .currency__custom_select {
       position: relative;
-      width: 55px;
-      .select-selected {
-        text-transform: capitalize;
-        font-size: 14px;
-        color: #333;
-        white-space: nowrap;
-        padding-left: 10px;
-        &:hover {
-          cursor: pointer;
-        }
-        &:after {
-          content: "\f3d0";
-          color: #878787;
-          font-family: ionicons;
-          position: absolute;
-          right: 3px;
-          top: 1px;
-        }
-      }
-
       .select-currency__list {
         font-size: 14px;
         border: 1px solid #dee2e6;
@@ -158,8 +181,9 @@ label {
         z-index: 999;
         position: absolute;
         background: white;
+        top: 26px;
         .currency__list-list {
-          padding: 10px;
+          padding: 8px;
           li {
             cursor: pointer;
           }
@@ -179,7 +203,6 @@ label {
   div.hr {
     width: 100%;
     background: #ddd;
-    margin: 10px 0;
     height: 1px;
     opacity: 0.5;
   }
