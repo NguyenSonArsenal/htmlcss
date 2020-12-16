@@ -56,14 +56,33 @@ div.header
   div.hr
   div.header__bottom
     div.container
-      nav.navbar.navbar-expand-lg.navbar-light
-        a.navbar-brand
-          img(src="./assets/images/layout/header/logo.png" width="175px")
-        button(type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-          span.navbar-toggler-icon
-        div(class="collapse navbar-collapse" id="navbarSupportedContent")
-          ul.navbar-nav.mr-auto
-            li.nav-item.active
-              a.nav-link Home
-            li.nav-item.active
-              a.nav-link Pages
+      nav.navbar.navbar-expand-lg
+        div.navbar__img
+          a.img-navbar-brand
+            img(src="./assets/images/layout/header/logo.png" width="175px")
+        div.collapse.navbar-collapse.justify-content-end
+          ul.navbar-nav.f14
+            li.navbar-nav__nav-item.active
+              a.navbar-nav__nav-item-nav-link HOME&nbsp
+                i.fa.fa-angle-down
+            li.navbar-nav__nav-item
+              a.navbar-nav__nav-item-nav-link.active PAGES&nbsp
+                i.fa.fa-angle-down
+            li.navbar-nav__nav-item
+              a.navbar-nav__nav-item-nav-link PRODUCTS&nbsp
+                i.fa.fa-angle-down
+            li.navbar-nav__nav-item
+              a.navbar-nav__nav-item-nav-link BLOG&nbsp
+                i.fa.fa-angle-down
+            li.navbar-nav__nav-item
+              a.navbar-nav__nav-item-nav-link SHOP&nbsp
+                i.fa.fa-angle-down
+            li.navbar-nav__nav-item
+              a.navbar-nav__nav-item-nav-link CONTACT US&nbsp
+            li.navbar-nav__nav-item
+              a.navbar-nav__nav-item-nav-link
+                i.linearicons-magnifier.f20
+            li.navbar-nav__nav-item
+              a.navbar-nav__nav-item-nav-link
+                i.linearicons-cart.f20
+

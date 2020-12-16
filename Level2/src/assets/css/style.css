@@ -5,6 +5,10 @@
     2. About Session
 */
 /* ===============================================================================
+   1. Variables
+   ===============================================================================
+*/
+/* ===============================================================================
    1. Reset Css
    ===============================================================================
 */
@@ -83,6 +87,9 @@ label {
 .c-white {
   color: white; }
 
+.f14 {
+  font-size: 14px; }
+
 .f18 {
   font-size: 18px; }
 
@@ -96,7 +103,7 @@ label {
     2. Header
    ===============================================================================
 */
-.header .header__top, .header .header__bottom {
+.header .header__top {
   padding: 15px 0; }
 
 .header .header__top-left .ul .header-left__nation {
@@ -172,6 +179,30 @@ label {
   background: #ddd;
   height: 1px;
   opacity: 0.5; }
+
+/* ===============================================================================
+    2. Menu
+   ===============================================================================
+*/
+.icon-search:before {
+  content: "\ec22"; }
+
+.header__bottom .navbar {
+  padding-left: 0; }
+
+.navbar-nav .navbar-nav__nav-item {
+  font-weight: 500;
+  margin-left: 20px; }
+  .navbar-nav .navbar-nav__nav-item .navbar-nav__nav-item-nav-link {
+    color: #292b2c; }
+    .navbar-nav .navbar-nav__nav-item .navbar-nav__nav-item-nav-link:hover {
+      color: #FF324D;
+      cursor: pointer; }
+  .navbar-nav .navbar-nav__nav-item .navbar-nav__nav-item-nav-link.active {
+    color: #FF324D; }
+  .navbar-nav .navbar-nav__nav-item .linearicons-magnifier:hover, .navbar-nav .navbar-nav__nav-item .linearicons-cart:hover {
+    color: #FF324D;
+    cursor: pointer; }
 
 /* ===============================================================================
     2. About Session

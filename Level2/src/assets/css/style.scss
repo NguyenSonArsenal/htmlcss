@@ -4,6 +4,15 @@
    1. Reset Css
     2. About Session
 */
+
+
+/* ===============================================================================
+   1. Variables
+   ===============================================================================
+*/
+$colorRed: #FF324D;
+$colorBlack: #292b2c;
+
 /* ===============================================================================
    1. Reset Css
    ===============================================================================
@@ -43,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: #FF324D;
+  color: $colorRed;
   text-decoration: none;
 }
 
@@ -100,6 +109,9 @@ label {
   color: white;
 }
 
+.f14 {
+  font-size: 14px;
+}
 .f18 {
   font-size: 18px;
 }
@@ -116,7 +128,7 @@ label {
    ===============================================================================
 */
 .header {
-  .header__top, .header__bottom {
+  .header__top {
     padding: 15px 0;
   }
   .header__top-left {
@@ -206,6 +218,39 @@ label {
     background: #ddd;
     height: 1px;
     opacity: 0.5;
+  }
+}
+
+/* ===============================================================================
+    2. Menu
+   ===============================================================================
+*/
+.icon-search:before {
+  content: "\ec22";
+}
+
+.header__bottom .navbar {
+  padding-left: 0;
+}
+
+.navbar-nav {
+  .navbar-nav__nav-item {
+    font-weight: 500;
+    margin-left: 20px;
+    .navbar-nav__nav-item-nav-link {
+      color: $colorBlack;
+      &:hover {
+        color: $colorRed;
+        cursor: pointer;
+      }
+    }
+    .navbar-nav__nav-item-nav-link.active {
+      color: $colorRed;
+    }
+    .linearicons-magnifier:hover, .linearicons-cart:hover {
+      color: $colorRed;
+      cursor: pointer;
+    }
   }
 }
 
