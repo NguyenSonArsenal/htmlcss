@@ -182,6 +182,7 @@ label {
         position: absolute;
         background: white;
         top: 26px;
+        left: -8px;
         .currency__list-list {
           padding: 8px;
           li {
@@ -321,6 +322,56 @@ label {
 .section_newsletter form .form-control:focus {
   box-shadow: none;
   color: #000;
+}
+
+/* ===============================================================================
+    Section Our Client
+   ===============================================================================
+*/
+.section_our_client {
+  background: #FFF1F1;
+  .our_client__description {
+    margin: 0 auto;
+    width: 560px;
+  }
+}
+
+.ion-ios-arrow-right:before {
+  content: "\f3d3";
+  font-size: 24px;
+  color: #000;
+}
+.ion-ios-arrow-left:before {
+  content: "\f3d2";
+  font-size: 24px;
+  color: #000;
+}
+
+.owl-carousel {
+  .owl-nav {
+    width: 560px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 46px;
+    .owl-prev {
+      left: -35px;
+      position: absolute;
+      opacity: 0.75;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .owl-next {
+      right: -35px;
+      position: absolute;
+      opacity: 0.75;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
 }
 
 /* ===============================================================================

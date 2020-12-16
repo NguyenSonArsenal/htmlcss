@@ -11,6 +11,8 @@ head
   link(rel="stylesheet" type="text/css" href="./assets/vendors/boostrap4/bootstrap4.min.css")
   link(rel="stylesheet" type="text/css" href="./assets/vendors/font-awesome/css/font-awesome.min.css")
   link(rel="stylesheet" type="text/css" href="./assets/fonts/themify-icons/themify-icons.css")
+  link(rel="stylesheet" href="./assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css")
+  link(rel="stylesheet" href="./assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css")
   link(rel="stylesheet" type="text/css" href="./assets/vendors/font_roboto.css")
   link(rel="stylesheet" type="text/css" href="./assets/vendors/font_Poppins.css")
   link(rel="stylesheet" type="text/css" href="./assets/vendors/ionicons.min.css")
@@ -20,21 +22,20 @@ head
   link(rel="stylesheet" type="text/css" href="./assets/css/responsive.css")
 
   block head
+body
+  div.app
+    include ./header.pug
+    block pages
+    include ./footer.pug
+
+  //- jQuery
+  script(src="./assets/js/jquery.min.js")
+  script(src="./assets/vendors/boostrap4/bootstrap4.js")
+  //- Owl Carousel
+  script(src="./assets/vendors/OwlCarousel2-2.3.4/dist/owl.carousel.min.js")
+  script(src="./assets/js/main.js")
+  script(src="./assets/js/common.js")
+
+  block script
 doctype html
 html
-  body
-    div.app
-        include ./header.pug
-        block pages
-        include ./footer.pug
-
-    //- jQuery
-    <script src="./assets/js/jquery.min.js"></script>
-    //- Owl Carousel
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/vendors/boostrap4/bootstrap4.js"></script>
-    //- Java Script
-    script(src="./assets/js/main.js")
-    script(src="./assets/js/common.js")
-
-    block script

@@ -1,15 +1,21 @@
-$(document).click(function() {
-  // console.log('xx', $("#nation__list-list").is(":visible"))
-  // console.log('xx2', $("#nation__list-list").css("display") === 'none')
-  // if($("#nation__list-list").is(":visible")) {
-  //   $("#nation__list-list").css("display", "none")
-  // }
-  // if($(".currency__custom_select #select-currency__list").is(":visible")) {
-  //   $('.currency__custom_select #select-currency__list').css("display","none")
-  // }
-});
-
 $( document ).ready(function() {
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    nav:true,
+    items:1,
+    touchDrag: true,
+    mouseDrag: true,
+    navText: ["<i class='ion-ios-arrow-left'></i>", "<i class='ion-ios-arrow-right'></i>"],
+    autoplay:true,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true,
+    responsive: {
+      0: {
+        items: 1
+      },
+    }
+  });
+
   // handle click list currency
   $(".currency__list-list li").click(function() {
     let text = $(this).text();
@@ -17,20 +23,12 @@ $( document ).ready(function() {
     $('.currency__custom_select .select-currency__list').css("display","none")
   });
   $('.currency__custom_select .select-selected').click(function () {
-    if($(".currency__custom_select .select-currency__list").is(":hidden")) {
-      $('.currency__custom_select .select-currency__list').css("display","block")
-    } else {
-      $('.currency__custom_select .select-currency__list').css("display","none")
-    }
+    $("#currency__list-list").toggle();
   })
 
   // handle click list nation
   $(".nation-selected").click(function () {
-    if($(".nation__list-list").is(":hidden")) {
-      $(".nation__list-list").css("display", "block")
-    } else {
-      $(".nation__list-list").css("display", "none")
-    }
+    $("#nation__list-list").toggle();
   });
   $(".nation__list-list li").click(function() {
     let text = $(this).text();

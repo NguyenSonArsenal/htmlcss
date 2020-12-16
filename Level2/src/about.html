@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="./assets/vendors/boostrap4/bootstrap4.min.css"/>
   <link rel="stylesheet" type="text/css" href="./assets/vendors/font-awesome/css/font-awesome.min.css"/>
   <link rel="stylesheet" type="text/css" href="./assets/fonts/themify-icons/themify-icons.css"/>
+  <link rel="stylesheet" href="./assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="./assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"/>
   <link rel="stylesheet" type="text/css" href="./assets/vendors/font_roboto.css"/>
   <link rel="stylesheet" type="text/css" href="./assets/vendors/font_Poppins.css"/>
   <link rel="stylesheet" type="text/css" href="./assets/vendors/ionicons.min.css"/>
@@ -15,229 +17,265 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
   <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css"/>
-</head><!DOCTYPE html>
-<html>
-  <body>
-    <div class="app">
-      <div class="header">
-        <div class="header__top">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="header__top-left mb-2 mb-md-0">
-                  <ul class="ul">
-                    <li class="d-inline-block header-left__nation">
-                      <div class="nation__custom_select">
-                        <div class="select-selected nation-selected"><img src="./assets/images/layout/header/eng.png" alt="Images name"><span class="select-selected">English</span></div>
-                        <ul class="nation__list-list" id="nation__list-list">
-                          <li class="mb-3"><img src="./assets/images/layout/header/eng.png" alt="Images name">English</li>
-                          <li class="mb-3"><img src="./assets/images/layout/header/fn.png" alt="Images name">France</li>
-                          <li><img src="./assets/images/layout/header/us.png" alt="Images name">United States</li>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="header__top-left mb-2 mb-md-0">
+                <ul class="ul">
+                  <li class="d-inline-block header-left__nation">
+                    <div class="nation__custom_select">
+                      <div class="select-selected nation-selected"><img src="./assets/images/layout/header/eng.png" alt="Images name"/><span class="select-selected">English</span></div>
+                      <ul class="nation__list-list text-left" id="nation__list-list">
+                        <li class="mb-3"><img src="./assets/images/layout/header/eng.png" alt="Images name"/>English</li>
+                        <li class="mb-3"><img src="./assets/images/layout/header/fn.png" alt="Images name"/>France</li>
+                        <li><img src="./assets/images/layout/header/us.png" alt="Images name"/>United States</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="d-inline-block header-left__currency">
+                    <div class="currency__custom_select">
+                      <select name="currency" style="display: none">
+                        <option value="USD">USD</option>
+                        <option value="USD">EUR</option>
+                        <option value="USD">GBR</option>
+                      </select>
+                      <div class="select-selected">USD</div>
+                      <div class="select-currency__list" id="currency__list-list">
+                        <ul class="currency__list-list">
+                          <li class="mb-3">USD</li>
+                          <li class="mb-3">EUR</li>
+                          <li>GBR</li>
                         </ul>
                       </div>
-                    </li>
-                    <li class="d-inline-block header-left__currency">
-                      <div class="currency__custom_select">
-                        <select name="currency" style="display: none">
-                          <option value="USD">USD</option>
-                          <option value="USD">EUR</option>
-                          <option value="USD">GBR</option>
-                        </select>
-                        <div class="select-selected">USD</div>
-                        <div class="select-currency__list">
-                          <ul class="currency__list-list" id="currency__list-list">
-                            <li class="mb-3">USD</li>
-                            <li class="mb-3">EUR</li>
-                            <li>GBR</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="d-inline-block header-left__contact_detail"><a href="javascript:void(0)"><i class="ti-mobile"></i>&nbsp 123-456-7890</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="header__top-right text-center text-md-right">
-                  <ul>
-                    <li><a href="javascript:void(0)"><i class="ti-control-shuffle"></i>&nbsp Compare</a></li>
-                    <li><a href="javascript:void(0)"><i class="ti-heart"></i>&nbsp Wishlist</a></li>
-                    <li><a href="javascript:void(0)"><i class="ti-user"></i>&nbsp Login</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hr"></div>
-        <div class="header__bottom">
-          <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand"><img src="./assets/images/layout/header/logo.png" width="175px"></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active"><a class="nav-link">Home</a></li>
-                  <li class="nav-item active"><a class="nav-link">Pages</a></li>
+                    </div>
+                  </li>
+                  <li class="d-inline-block header-left__contact_detail"><a href="javascript:void(0)"><i class="ti-mobile"></i>&nbsp 123-456-7890</a></li>
                 </ul>
               </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="section_breadcrumb">
-        <div class="container">
-          <div class="wrapper_breadcrumb">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="page-title">
-                  <h1>About Us</h1>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <ul class="breadcrumb__left justify-content-md-end d-flex">
-                  <li><a href="javascript:void(0)">Home<span> ></span></a></li>
-                  <li><a href="javascript:void(0)">Pages<span> ></span></a></li>
-                  <li><a class="breadcrumb__left-active" href="javascript:void(0)">About</a></li>
+            </div>
+            <div class="col-md-6">
+              <div class="header__top-right text-center text-md-right">
+                <ul>
+                  <li><a href="javascript:void(0)"><i class="ti-control-shuffle"></i>&nbsp Compare</a></li>
+                  <li><a href="javascript:void(0)"><i class="ti-heart"></i>&nbsp Wishlist</a></li>
+                  <li><a href="javascript:void(0)"><i class="ti-user"></i>&nbsp Login</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section section_who_we_are">
+      <div class="hr"></div>
+      <div class="header__bottom">
         <div class="container">
-          <div class="who_we_are">
-            <div class="row align-items-md-center">
-              <div class="col-md-6">
-                <div class="who_we_are__image"><img src="./assets/images/about/about_img.jpg" alt="Images name"></div>
+          <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand"><img src="./assets/images/layout/header/logo.png" width="175px"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link">Home</a></li>
+                <li class="nav-item active"><a class="nav-link">Pages</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="section_breadcrumb">
+      <div class="container">
+        <div class="wrapper_breadcrumb">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="page-title">
+                <h1>About Us</h1>
               </div>
-              <div class="col-md-6">
-                <div class="heading_s1">
-                  <h2 class="mb-3">Who We Are</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur quibusdam enim expedita sed
-                    <nesciunt>incidunt accusamus adipisci officia libero laboriosam!</nesciunt>
-                  </p><br>
-                  <p>Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
-                    <vultate>cursus a sit amet mauris. Duis sed odio sit amet nibh vultate cursus a sit amet mauris.</vultate>
-                  </p>
-                </div>
-              </div>
+            </div>
+            <div class="col-md-6">
+              <ul class="breadcrumb__left justify-content-md-end d-flex">
+                <li><a href="javascript:void(0)">Home<span> ></span></a></li>
+                <li><a href="javascript:void(0)">Pages<span> ></span></a></li>
+                <li><a class="breadcrumb__left-active" href="javascript:void(0)">About</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="section section_choose_us">
-        <div class="container">
-          <div class="choose_us text-center">
-            <div class="choose_us__top">
+    </div>
+    <div class="section section_who_we_are">
+      <div class="container">
+        <div class="who_we_are">
+          <div class="row align-items-md-center">
+            <div class="col-md-6">
+              <div class="who_we_are__image"><img src="./assets/images/about/about_img.jpg" alt="Images name"/></div>
+            </div>
+            <div class="col-md-6">
               <div class="heading_s1">
-                <h2>Why Choose Us</h2>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<span class="d-md-block"></span>sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-            <div class="choose_us__bottom">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="choose_us__bottom-item mb-5 mb-md-0">
-                    <div class="bottom-item__img"><img width="50px" src="./assets/images/about/ti-pencil-alt.png" alt="Image Name"></div>
-                    <h3 class="f18">Creative Design</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="choose_us__bottom-item mb-5 mb-md-0">
-                    <div class="bottom-item__img"><img width="50px" src="./assets/images/about/ti-layer.png" alt="Image Name"></div>
-                    <h3 class="f18">Flexible Layouts</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="choose_us__bottom-item mb-5 mb-md-0">
-                    <div class="bottom-item__img"><img width="50px" src="./assets/images/about/ti-layer.png" alt="Image Name"></div>
-                    <h3 class="f18">Email Marketing</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                  </div>
-                </div>
+                <h2 class="mb-3">Who We Are</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur quibusdam enim expedita sed
+                  <nesciunt>incidunt accusamus adipisci officia libero laboriosam!</nesciunt>
+                </p><br/>
+                <p>Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                  <vultate>cursus a sit amet mauris. Duis sed odio sit amet nibh vultate cursus a sit amet mauris.</vultate>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section section_support ptb70">
-        <div class="container">
-          <div class="wrapper_section_support text-center">
+    </div>
+    <div class="section section_choose_us">
+      <div class="container">
+        <div class="choose_us text-center">
+          <div class="choose_us__top">
+            <div class="heading_s1">
+              <h2>Why Choose Us</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<span class="d-md-block"></span>sed do eiusmod tempor incididunt ut labore.</p>
+          </div>
+          <div class="choose_us__bottom">
             <div class="row">
               <div class="col-md-4">
-                <div class="section_support__item section_support__item-with-border">
-                  <div class="icon"><i class="flaticon-shipped"></i></div>
-                  <h3 class="f18">Free Delivery</h3>
-                  <p>If you are going to use of Lorem, you need to be sure there anything</p>
+                <div class="choose_us__bottom-item mb-5 mb-md-0">
+                  <div class="bottom-item__img"><img width="50px" src="./assets/images/about/ti-pencil-alt.png" alt="Image Name"/></div>
+                  <h3 class="f18">Creative Design</h3>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="section_support__item section_support__item-with-border">
-                  <div class="icon"><i class="flaticon-money-back"></i></div>
-                  <h3 class="f18">30 Day Return</h3>
-                  <p>If you are going to use of Lorem, you need to be sure there anything</p>
+                <div class="choose_us__bottom-item mb-5 mb-md-0">
+                  <div class="bottom-item__img"><img width="50px" src="./assets/images/about/ti-layer.png" alt="Image Name"/></div>
+                  <h3 class="f18">Flexible Layouts</h3>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="section_support__item">
-                  <div class="icon"><i class="flaticon-support"></i></div>
-                  <h3 class="f18">27/4 Support</h3>
-                  <p>If you are going to use of Lorem, you need to be sure there anything</p>
+                <div class="choose_us__bottom-item mb-5 mb-md-0">
+                  <div class="bottom-item__img"><img width="50px" src="./assets/images/about/ti-layer.png" alt="Image Name"/></div>
+                  <h3 class="f18">Email Marketing</h3>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section section_newsletter">
+    </div>
+    <div class="section section_our_client">
+      <div class="container text-center">
+        <div class="heading_s1">
+          <h2>Our Client Say!</h2>
+        </div>
+        <div class="owl-carousel owl-loaded">
+          <div class="our_client__description">
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
+            <div class="our_client__author d-flex justify-content-center align-items-center">
+              <div class="our_client__author-img"><img width="65px" src="./assets/images/about/user_img2.jpg" alt="Image Name"/></div>
+              <div class="our_client__author-info pl-2">
+                <h6>Daisy Lina 1</h6><span class="text-danger">Designer 1</span>
+              </div>
+            </div>
+          </div>
+          <div class="our_client__description">
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
+            <div class="our_client__author d-flex justify-content-center align-items-center">
+              <div class="our_client__author-img"><img width="65px" src="./assets/images/about/user_img2.jpg" alt="Image Name"/></div>
+              <div class="our_client__author-info pl-2">
+                <h6>Daisy Lina 2</h6><span class="text-danger">Designer 2</span>
+              </div>
+            </div>
+          </div>
+          <div class="our_client__description">
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
+            <div class="our_client__author d-flex justify-content-center align-items-center">
+              <div class="our_client__author-img"><img width="65px" src="./assets/images/about/user_img2.jpg" alt="Image Name"/></div>
+              <div class="our_client__author-info pl-2">
+                <h6>Daisy Lina 3</h6><span class="text-danger">Designer 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section_support ptb70">
+      <div class="container">
+        <div class="wrapper_section_support text-center">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="section_support__item section_support__item-with-border">
+                <div class="icon"><i class="flaticon-shipped"></i></div>
+                <h3 class="f18">Free Delivery</h3>
+                <p>If you are going to use of Lorem, you need to be sure there anything</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section_support__item section_support__item-with-border">
+                <div class="icon"><i class="flaticon-money-back"></i></div>
+                <h3 class="f18">30 Day Return</h3>
+                <p>If you are going to use of Lorem, you need to be sure there anything</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section_support__item">
+                <div class="icon"><i class="flaticon-support"></i></div>
+                <h3 class="f18">27/4 Support</h3>
+                <p>If you are going to use of Lorem, you need to be sure there anything</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section_newsletter">
+      <div class="container">
+        <div class="wrapper_section_newsletter">
+          <div class="row align-items-md-center">
+            <div class="col-md-6">
+              <div class="heading_s1 mb-md-0">
+                <h2 class="c-white">Subscribe Our Newsletter</h2>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <form class="d-flex" action="">
+                <input class="form-control" type="text" placeholder="Enter Email Address"/>
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__top"></div>
+      <div class="footer__bottom">
         <div class="container">
-          <div class="wrapper_section_newsletter">
-            <div class="row align-items-md-center">
+          <div class="footer__bottom-wrapper">
+            <div class="row">
               <div class="col-md-6">
-                <div class="heading_s1 mb-md-0">
-                  <h2 class="c-white">Subscribe Our Newsletter</h2>
-                </div>
+                <p class="c-white">© 2020 All Rights Reserved by Bestwebcreator</p>
               </div>
               <div class="col-md-6">
-                <form class="d-flex" action="">
-                  <input class="form-control" type="text" placeholder="Enter Email Address">
-                  <button type="submit">Subscribe</button>
-                </form>
+                <ul class="text-center text-lg-right">
+                  <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/visa.png" alt="Image name"/></a></li>
+                  <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/discover.png" alt="Image name"/></a></li>
+                  <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/master_card.png" alt="Image name"/></a></li>
+                  <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/paypal.png" alt="Image name"/></a></li>
+                  <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/amarican_express.png" alt="Image name"/></a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer">
-        <div class="footer__top"></div>
-        <div class="footer__bottom">
-          <div class="container">
-            <div class="footer__bottom-wrapper">
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="c-white">© 2020 All Rights Reserved by Bestwebcreator</p>
-                </div>
-                <div class="col-md-6">
-                  <ul class="text-center text-lg-right">
-                    <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/visa.png" alt="Image name"></a></li>
-                    <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/discover.png" alt="Image name"></a></li>
-                    <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/master_card.png" alt="Image name"></a></li>
-                    <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/paypal.png" alt="Image name"></a></li>
-                    <li class="d-inline-block"><a href="javascript:void(0)"><img src="./assets/images/layout/amarican_express.png" alt="Image name"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><script src="./assets/js/jquery.min.js"></script>
-<script src="./assets/js/owl.carousel.min.js"></script>
-<script src="./assets/vendors/boostrap4/bootstrap4.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/common.js"></script>
-  </body>
-</html>
+    </div>
+  </div>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/vendors/boostrap4/bootstrap4.js"></script>
+  <script src="./assets/vendors/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/common.js"></script>
+</body><!DOCTYPE html>
+<html></html>
