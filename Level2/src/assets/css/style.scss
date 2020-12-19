@@ -105,6 +105,12 @@ label {
   font-size: 32px;
 }
 
+
+/* ===============================================================================
+    2. Common
+   ===============================================================================
+*/
+
 .c-white {
   color: white;
 }
@@ -121,6 +127,13 @@ label {
 
 .ptb70 {
   padding: 70px 0;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
 }
 
 /* ===============================================================================
@@ -237,8 +250,10 @@ label {
   .navbar-nav__nav-item {
     font-weight: 500;
     margin-left: 20px;
+    position: relative;
     .navbar-nav__nav-item-nav-link {
       color: $colorBlack;
+      padding-bottom: 20px;
       &:hover {
         color: $colorRed;
         cursor: pointer;
@@ -251,7 +266,34 @@ label {
       color: $colorRed;
       cursor: pointer;
     }
+    .item-dropdown__menu {
+      position: absolute;
+      z-index: 2;
+      width: 210px;
+      top: 40px;
+      background: white;
+      color: #333;
+      padding-top: 15px;
+      padding-left: 15px;
+      left: -10px;
+      box-shadow: 0 13px 42px 11px rgba(0,0,0,.05);
+      display: none;
+      transition: all 0.5s ease;
+      >ul >li {
+        margin-bottom: 15px;
+        .a-nav-link {
+          &:hover {
+            color: $colorRed;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
+}
+
+.navbar-nav__nav-item:hover > .item-dropdown__menu, .navbar-nav__nav-item > .item-dropdown__menu ul li:hover {
+  display: block;
 }
 
 /* ===============================================================================
@@ -262,7 +304,7 @@ label {
   background: #F7F8FB;
 }
 .section_breadcrumb .wrapper_breadcrumb {
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .section_breadcrumb .wrapper_breadcrumb .breadcrumb__left {
