@@ -225,6 +225,11 @@ label {
   .header__top-right ul li {
     margin-left: 15px;
     display: inline-block;
+    a {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+    }
   }
   div.hr {
     width: 100%;
@@ -279,20 +284,48 @@ label {
       box-shadow: 0 13px 42px 11px rgba(0,0,0,.05);
       display: none;
       transition: all 0.5s ease;
-      >ul >li {
-        margin-bottom: 15px;
-        .a-nav-link {
-          &:hover {
-            color: $colorRed;
-            cursor: pointer;
-          }
-        }
+      ul li {
+        padding-bottom: 15px;
+        position: relative;
+      }
+    }
+    .item-dropdown__menu-blog {
+      left: -160px;
+      padding-left: 0;
+      > ul > li {
+        padding-left: 15px;
       }
     }
   }
 }
 
+.dropdown__menu__2 {
+  position: absolute;
+  top: -15px;
+  left: -215px;
+  background: white;
+  width: 215px;
+  padding-top: 15px;
+  padding-left: 15px;
+  box-shadow: 1px 5px 20px -3px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+
 .navbar-nav__nav-item:hover > .item-dropdown__menu, .navbar-nav__nav-item > .item-dropdown__menu ul li:hover {
+  display: block;
+}
+
+.item-dropdown__menu {
+  .a-nav-link {
+    &:hover {
+      color: $colorRed;
+      cursor: pointer;
+    }
+  }
+}
+
+.item-dropdown__menu-blog > ul > li:hover > .dropdown__menu__2, .item-dropdown__menu-blog > ul > li > .dropdown__menu__2 ul li:hover {
   display: block;
 }
 
