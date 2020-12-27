@@ -15,6 +15,10 @@ block pages
 
 # Run Project
 - npm install
-- npm install -g gulp 
-- gulp dev (development)
+- npm install -g gulp
+- npm install -g yarn
+- yarn install
 - gulp build (build production)
+- gulp dev (development)
+open any pug file(ctrl + s) ->  auto render pug to html
+open file main.scss(ctrl + s) ->  auto render file main.css
