@@ -1,19 +1,17 @@
 var gulp = require('gulp');
 
-//Minify HTML
+// Minify HTML from src to dist => Send to customer
 var html = require('gulp-htmlmin');
-
 gulp.task('html', () => {
 	return gulp.src('src/**/*.html')
 		.pipe(html())
 		.pipe(gulp.dest('dist'));
 });
 
-//PUG - HTML
+// Build file PUG to file HTML in src path
 var pug = require('gulp-pug');
-
 gulp.task('pug', function buildHTML() {
-	return gulp.src('./src/pug/*.pug')
+	return gulp.src('./src/*.pug')
 		.pipe(pug({
 			pretty: true
 		}))
@@ -25,12 +23,12 @@ var sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 
 gulp.task('sass', () => {
-	return gulp.src('./src/assets/css/**/*.scss')
-		.pipe(sass())
-		.pipe(gulp.dest('./src/assets/css'))
+  return gulp.src('./src/assets/css/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./src/assets/css/'))
 });
 gulp.task('sass:watch', () => {
-	gulp.watch('./src/assets/css/**/*.scss', gulp.series('sass'));
+  gulp.watch('./src/assets/css/main.scss', gulp.series('sass'));
 });
 
 //LESS - CSS

@@ -54,119 +54,495 @@ div.header
                   i.ti-user
                   | &nbsp Login
   div.hr
-  div.header__bottom
-    div.container
-      nav.navbar.navbar-expand-lg
-        div.navbar__img
-          a.img-navbar-brand
-            img(src="./assets/images/layout/header/logo.png" width="175px")
-        div.collapse.navbar-collapse.justify-content-end
-          ul.navbar-nav.f14
-            li.navbar-nav__nav-item.active
-              a.navbar-nav__nav-item-nav-link HOME&nbsp
-                i.fa.fa-angle-down
-              div.item-dropdown__menu
-                ul
-                  li
-                    a(href='', class="a-nav-link") Fashion 1
-                  li
-                    a(href='', class="a-nav-link") Fashion 2
-                  li
-                    a(href='', class="a-nav-link") Furniture 1
-                  li
-                    a(href='', class="a-nav-link") Furniture 2
-                  li
-                    a(href='', class="a-nav-link") Electronics 1
-                  li
-                    a(href='', class="a-nav-link") Electronics 2
+  .section__header-desktop
+    div.header
+      div.header__bottom
+        div.container
+          nav.navbar.navbar-expand-lg
+            div.navbar__img
+              a(href="", class="img-navbar-brand d-block")
+                img(src="./assets/images/layout/header/logo.png" width="175px")
+            div.collapse.navbar-collapse.justify-content-end
+              ul.navbar-nav.f14.d-flex.align-items-center
+                li.navbar-nav__nav-item.active
+                  a.navbar-nav__nav-item-nav-link HOME&nbsp
+                    i.fa.fa-angle-down
+                  div.item-dropdown__menu
+                    ul
+                      li
+                        a(href='', class="a-nav-link") Fashion 1
+                      li
+                        a(href='', class="a-nav-link") Fashion 2
+                      li
+                        a(href='', class="a-nav-link") Furniture 1
+                      li
+                        a(href='', class="a-nav-link") Furniture 2
+                      li
+                        a(href='', class="a-nav-link") Electronics 1
+                      li
+                        a(href='', class="a-nav-link") Electronics 2
 
-            li.navbar-nav__nav-item
-              a.navbar-nav__nav-item-nav-link.active PAGES&nbsp
-                i.fa.fa-angle-down
-              div.item-dropdown__menu
-                ul
-                  li
-                    a(href='', class="a-nav-link") About us
-                  li
-                    a(href='', class="a-nav-link") Contact Us
-                  li
-                    a(href='', class="a-nav-link") FAQ
-                  li
-                    a(href='', class="a-nav-link") 404 Not Found
-                  li
-                    a(href='', class="a-nav-link") Login
-                  li
-                    a(href='', class="a-nav-link") Register
-                  li
-                    a(href='', class="a-nav-link") Turns And Conditions
+                li.navbar-nav__nav-item
+                  a.navbar-nav__nav-item-nav-link.active PAGES&nbsp
+                    i.fa.fa-angle-down
+                  div.item-dropdown__menu
+                    ul
+                      li
+                        a(href='', class="a-nav-link") About us
+                      li
+                        a(href='', class="a-nav-link") Contact Us
+                      li
+                        a(href='', class="a-nav-link") FAQ
+                      li
+                        a(href='', class="a-nav-link") 404 Not Found
+                      li
+                        a(href='', class="a-nav-link") Login
+                      li
+                        a(href='', class="a-nav-link") Register
+                      li
+                        a(href='', class="a-nav-link") Turns And Conditions
 
-            li.navbar-nav__nav-item.mega__menu
-              a.navbar-nav__nav-item-nav-link PRODUCTS&nbsp
-                i.fa.fa-angle-down
-            li.navbar-nav__nav-item
-              a.navbar-nav__nav-item-nav-link BLOG&nbsp
-                i.fa.fa-angle-down
-              div.item-dropdown__menu.item-dropdown__menu-blog
-                ul
-                  li
-                    a(href='', class="a-nav-link") Grids
-                    div.dropdown__menu__2
-                      ul
+                li.navbar-nav__nav-item.mega__menu.dropdown-mega-menu
+                  a.navbar-nav__nav-item-nav-link PRODUCTS&nbsp
+                    i.fa.fa-angle-down
+                  div.item-dropdown__menu.dropdown-mega-menu__content
+                    div.dropdown_menu__content.content__products
+                      div.content__products-top
+                        div.dropdown-mega-menu__content-products.d-flex
+                          ul.dropdown-mega-menu__content-item
+                            li.dropdown__shop-item-head.dropdown-mega-menu__content-item__head WOMAN'S
+                            li
+                              a(href='') Vestibulum sed
+                            li
+                              a(href='') Donec porttitor
+                            li
+                              a(href='') Donec vitae facilisis
+                            li
+                              a(href='') Curabitur tempus
+                            li
+                              a(href='') Vivamus in tortor
+                          ul.dropdown-mega-menu__content-item
+                            li.dropdown__shop-item-head.dropdown-mega-menu__content-item__head MEN'S
+                            li
+                              a(href='') Donec vitae ante ante
+                            li
+                              a(href='') Donec porttitor
+                            li
+                              a(href='') Donec vitae facilisis
+                            li
+                              a(href='') Curabitur tempus
+                            li
+                              a(href='') Vivamus in tortor
+                          ul.dropdown-mega-menu__content-item
+                            li.dropdown__shop-item-head.dropdown-mega-menu__content-item__head KID'S
+                            li
+                              a(href='') Vestibulum sed
+                            li
+                              a(href='') Donec porttitor
+                            li
+                              a(href='') Donec vitae facilisis
+                            li
+                              a(href='') Curabitur tempus
+                            li
+                              a(href='') Vivamus in tortor
+                          ul.dropdown-mega-menu__content-item
+                            li.dropdown__shop-item-head.dropdown-mega-menu__content-item__head ACCESSORIES
+                            li
+                              a(href='') Vestibulum sed
+                            li
+                              a(href='') Donec porttitor
+                            li
+                              a(href='') Donec vitae facilisis
+                            li
+                              a(href='') Curabitur tempus
+                            li
+                              a(href='') Vivamus in tortor
+                      div.content__products-bottom.mt-3
+                        div.content__products-bottom__item.d-flex
+                          div.products-bottom__item-banner
+                            img(src="./assets/images/layout/header/menu_banner1.jpg")
+                            div.products-bottom__item-banner__content
+                              h6 10% Off
+                              h4.mt-2.mb-2 New Arrival
+                              a(href='' class="cool-link f16") Shop Now
+                          div.products-bottom__item-banner
+                            img(src="./assets/images/layout/header/menu_banner2.jpg")
+                            div.products-bottom__item-banner__content
+                              h6 10% Off
+                              h4.mt-2.mb-2 New Arrival
+                              a(href='' class="cool-link f16") Shop Now
+                          div.products-bottom__item-banner
+                            img(src="./assets/images/layout/header/menu_banner3.jpg")
+                            div.products-bottom__item-banner__content
+                              h6 10% Off
+                              h4.mt-2.mb-2 New Arrival
+                              a(href='' class="cool-link f16") Shop Now
+
+                li.navbar-nav__nav-item
+                  a.navbar-nav__nav-item-nav-link BLOG&nbsp
+                    i.fa.fa-angle-down
+                  div.item-dropdown__menu.item-dropdown__menu-blog
+                    ul
+                      li
+                        a(href='', class="a-nav-link") Grids
+                          i.fa.fa-angle-right
+                          i.fa.fa-angle-left
+                        div.dropdown__menu__2
+                          ul
+                            li
+                              a(href='', class="a-nav-link") 3 Columns
+                            li
+                              a(href='', class="a-nav-link") 4 Columns
+                            li
+                              a(href='', class="a-nav-link") Left SideBar
+                            li
+                              a(href='', class="a-nav-link") Right SideBar
+                            li
+                              a(href='', class="a-nav-link") Standards Left SideBar
+                            li
+                              a(href='', class="a-nav-link") Standards Right SideBar
+                      li
+                        a(href='', class="a-nav-link") Masonry
+                          i.fa.fa-angle-right
+                          i.fa.fa-angle-left
+                        div.dropdown__menu__2
+                          ul
+                            li
+                              a(href='', class="a-nav-link") 3 Columns
+                            li
+                              a(href='', class="a-nav-link") 4 Columns
+                            li
+                              a(href='', class="a-nav-link") Left SideBar
+                            li
+                              a(href='', class="a-nav-link") Right SideBar
+                      li
+                        a(href='', class="a-nav-link") Single Post
+                          i.fa.fa-angle-right
+                          i.fa.fa-angle-left
+                        div.dropdown__menu__2
+                          ul
+                            li
+                              a(href='', class="a-nav-link") Default
+                            li
+                              a(href='', class="a-nav-link") Left Sidebar
+                            li
+                              a(href='', class="a-nav-link") Slider Post
+                            li
+                              a(href='', class="a-nav-link") Video Post
+                            li
+                              a(href='', class="a-nav-link") Audio Post
+                      li
+                        a(href='', class="a-nav-link") List
+                          i.fa.fa-angle-right
+                          i.fa.fa-angle-left
+                          div.dropdown__menu__2
+                            ul
+                              li
+                                a(href='', class="a-nav-link") Left SideBar
+                              li
+                                a(href='', class="a-nav-link") Right Sidebar
+                li.navbar-nav__nav-item.dropdown-mega-menu.dropdown-mega-menu-shop
+                  a.navbar-nav__nav-item-nav-link SHOP&nbsp
+                    i.fa.fa-angle-down
+                  div.item-dropdown__menu.dropdown-mega-menu__content
+                    div.dropdown_menu__content.content__shop
+                      ul.dropdown__shop-list.dropdown-mega-menu__content-item
+                        li.dropdown__shop-item-head.dropdown-mega-menu__content-item__head SHOP PAGE LAYOUT
                         li
-                          a(href='', class="a-nav-link") 3 Columns
+                          a(href='') Shop List view
                         li
-                          a(href='', class="a-nav-link") 4 Columns
+                          a(href='') Shop List Left Sidebar
                         li
-                          a(href='', class="a-nav-link") Left SideBar
+                          a(href='') Shop List Right Sidebar
                         li
-                          a(href='', class="a-nav-link") Right SideBar
+                          a(href='') Left Sidebar
                         li
-                          a(href='', class="a-nav-link") Standards Left SideBar
+                          a(href='') Right Sidebar
                         li
-                          a(href='', class="a-nav-link") Standards Right SideBar
-                  li
-                    a(href='', class="a-nav-link") Masonry
-                    div.dropdown__menu__2
-                      ul
+                          a(href='') Shop Load More
+
+                      ul.dropdown__shop-list.dropdown-mega-menu__content-item
+                        li.dropdown__shop-item-head OTHER PAGES
                         li
-                          a(href='', class="a-nav-link") 3 Columns
+                          a(href='') Cart
                         li
-                          a(href='', class="a-nav-link") 4 Columns
+                          a(href='') Checkout
                         li
-                          a(href='', class="a-nav-link") Left SideBar
+                          a(href='') My Account
                         li
-                          a(href='', class="a-nav-link") Right SideBar
-                  li
-                    a(href='', class="a-nav-link") Single Post
-                    div.dropdown__menu__2
-                      ul
+                          a(href='') Wishlist
                         li
-                          a(href='', class="a-nav-link") Default
+                          a(href='') Compare
                         li
-                          a(href='', class="a-nav-link") Left Sidebar
+                          a(href='') Order Completed
+
+                      ul.dropdown__shop-list.dropdown-mega-menu__content-item
+                        li.dropdown__shop-item-head PRODUCT PAGES
                         li
-                          a(href='', class="a-nav-link") Slider Post
+                          a(href='') Default
                         li
-                          a(href='', class="a-nav-link") Video Post
+                          a(href='') Left Sidebar
                         li
-                          a(href='', class="a-nav-link") Audio Post
-                  li
-                    a(href='', class="a-nav-link") List
-                      div.dropdown__menu__2
-                        ul
-                          li
-                            a(href='', class="a-nav-link") Left SideBar
-                          li
-                            a(href='', class="a-nav-link") Right Sidebar
-            li.navbar-nav__nav-item
-              a.navbar-nav__nav-item-nav-link SHOP&nbsp
-                i.fa.fa-angle-down
-            li.navbar-nav__nav-item
-              a.navbar-nav__nav-item-nav-link CONTACT US&nbsp
-            li.navbar-nav__nav-item
-              a.navbar-nav__nav-item-nav-link
-                i.linearicons-magnifier.f20
-            li.navbar-nav__nav-item
-              a.navbar-nav__nav-item-nav-link
-                i.linearicons-cart.f20
+                          a(href='') Right Sidebar
+                        li
+                          a(href='') Thumbnails Left
+                      ul.dropdown__shop-list.dropdown-mega-menu__content-item
+                        li.shop-list__shop_banner
+                          div.shop_banner__img.overlay_bg_40
+                            img(src="./assets/images/layout/header/shop_banner.jpg" width="175px")
+                          div.shop_benner__content
+                            h5 NEW COLLECTION
+                            h3 SALE 30% OFF
+                            a(href='' class='btn-white') SHOP NOW
+
+
+                li.navbar-nav__nav-item
+                  a.navbar-nav__nav-item-nav-link CONTACT US&nbsp
+                li.navbar-nav__nav-item
+                  a.navbar-nav__nav-item-nav-link
+                    i(class="linearicons-magnifier f20 icon__search")
+                li.navbar-nav__nav-item.navbar-nav__nav-item-cart
+                  a.navbar-nav__nav-item-nav-link
+                    i.linearicons-cart.f20
+                      small.cart__total-number 2
+                  div.cart__box
+                    div.cart__box-list
+                      div.cart__box-list__item.d-flex
+                        a(href='')
+                          img(src="./assets/images/layout/header/cart_thamb1.jpg" width="115px")
+                        div.item__info-product
+                          a(href='', class="a-nav-link") Variable product 001
+                          span.product__price 1 x $78.00
+                        span
+                          i.ion-close
+                      div.cart__box-list__item.d-flex
+                        a(href='')
+                          img(src="./assets/images/layout/header/cart_thamb1.jpg" width="115px")
+                        div.item__info-product
+                          a(href='', class="a-nav-link") Variable product 002
+                          span.product__price 1 x $78.00
+                        span
+                          i.ion-close
+                    div.cart__box_footer
+                      div.cart__box_footer_top
+                        div(class="d-flex", style="justify-content: space-between;")
+                          span Subtotal
+                          span $159.00
+                      div.cart__box_footer_bottom
+                        div.d-fex
+                          a(href='' class="sw__btn bottom__cart-btn cart__btn-view-cart") View Cart
+                          a(href='' class="sw__btn bottom__cart-btn cart__btn-checkout") Checkout
+
+
+  .section__header-mobile
+    div.header
+      div.header__bottom
+        div.container
+          nav.navbar.navbar-expand-lg
+            div.navbar__img
+              a.img-navbar-brand
+                img(src="./assets/images/layout/header/logo.png" width="175px")
+            ul.navbar__icon__control.d-flex
+              li.icon__control-item
+                a.navbar-nav__nav-item-nav-link
+                  i(class="linearicons-magnifier f20 icon__search")
+              li.icon__control-item.ml-3.mr-3.icon__control-item-cart
+                a.navbar-nav__nav-item-nav-link
+                  i.linearicons-cart.f20
+                    small.cart__total-number 2
+                div.cart__box.cart__box-sp
+                  div.cart__box-list
+                    div.cart__box-list__item.d-flex
+                      a(href='')
+                        img(src="./assets/images/layout/header/cart_thamb1.jpg" width="115px")
+                      div.item__info-product
+                        a(href='', class="a-nav-link") Variable product 001
+                        span.product__price 1 x $78.00
+                      span
+                        i.ion-close
+                    div.cart__box-list__item.d-flex
+                      a(href='')
+                        img(src="./assets/images/layout/header/cart_thamb1.jpg" width="115px")
+                      div.item__info-product
+                        a(href='', class="a-nav-link") Variable product 002
+                        span.product__price 1 x $78.00
+                      span
+                        i.ion-close
+                  div.cart__box_footer
+                    div.cart__box_footer_top
+                      div(class="d-flex", style="justify-content: space-between;")
+                        span Subtotal
+                        span $159.00
+                    div.cart__box_footer_bottom
+                      div.d-fex
+                        a(href='' class="bottom__cart-btn cart__btn-view-cart") View Cart
+                        a(href='' class="bottom__cart-btn cart__btn-checkout") Checkout
+              li
+                img(src="./assets/images/layout/header/ion-android-menu.png" width="20px" class='ion-android-menu')
+                img(src="./assets/images/layout/header/ion-android-close.png" width="20px" style="display: none" class='ion-android-close')
+          div.navbar-collapse
+            ul.navbar-nav
+              li.navbar-nav-l1
+                a.f14 HOME
+                  i.fa.fa-angle-down
+                div.navbar-nav-l1__dropdown-menu.pl-3
+                  ul.dropdown-menu__list
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Fashion 1
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Fashion 2
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Furniture 1
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Furniture 2
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Electronics 1
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Electronics 2
+              li.navbar-nav-l1
+                a.f14.navbar-nav__active PAGE
+                  i.fa.fa-angle-down
+                div.navbar-nav-l1__dropdown-menu.pl-3
+                  ul.dropdown-menu__list
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link navbar-nav__active') About Us
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Contact Us
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') FAQ
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') 404 Error Page
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Login
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Terms and Conditions
+              li.navbar-nav-l1
+                a.f14 PRODUCTS
+                  i.fa.fa-angle-down
+                div.navbar-nav-l1__dropdown-menu.pl-3
+                  ul.dropdown-menu__list
+                    li.dropdown-menu__item.dropdown-menu__item_head
+                      strong Woman's
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Vestibulum sed
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Donec porttitor
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Donec vitae facilisis
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Curabitur tempus
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Vivamus in tortor
+
+                    li.dropdown-menu__item.dropdown-menu__item_head
+                      strong Men's
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Vestibulum sed
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Donec porttitor
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Donec vitae facilisis
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Curabitur tempus
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Vivamus in tortor
+
+                    li.dropdown-menu__item.dropdown-menu__item_head
+                      strong Kid's
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Vestibulum sed
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Donec porttitor
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Donec vitae facilisis
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Curabitur tempus
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Vivamus in tortor
+
+                    li.dropdown-menu__item.dropdown-menu__item_head
+                      strong Accessories
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Vestibulum sed
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Donec porttitor
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Donec vitae facilisis
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Curabitur tempus
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Vivamus in tortor
+
+              li.navbar-nav-l1
+                a.f14 BLOG
+                  i.fa.fa-angle-down
+                div.navbar-nav-l1__dropdown-menu.pl-3
+                  ul.dropdown-menu__list
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Girds
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Masonry
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') Single Post
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') List
+              li.navbar-nav-l1
+                a.f14 SHOP
+                  i.fa.fa-angle-down
+                div.navbar-nav-l1__dropdown-menu.pl-3
+                  ul.dropdown-menu__list
+                    li.dropdown-menu__item.dropdown-menu__item_head
+                      strong Shop Page Layout
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 2
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 3
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 4
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 5
+
+                    li.dropdown-menu__item.dropdown-menu__item_head
+                      strong Shop Page Layout
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 2
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 3
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 4
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 5
+
+                    li.dropdown-menu__item.dropdown-menu__item_head
+                      strong Shop Page Layout
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 2
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 3
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 4
+                    li.dropdown-menu__item
+                      a(href='' class='dropdown-menu__item-link') shop List view 5
+
+              li.navbar-nav-l1
+                a.f14 CONTRACT US
+
+
+  div(class="modalSearch")
+    span.close_search
+      i(class="fa fa-times")
+    form
+      input(placeholder="Search")
+      button.search_icon
+        i(class="linearicons-magnifier f20")
+
+  div.search_overlay
+
+
 

@@ -1,12 +1,87 @@
-@import './mixins/animation.scss';
-@import './mixins/backface_visibility.scss';
-@import './mixins/backgroundGradient.scss';
-@import './mixins/box_shadow.scss';
-@import './mixins/box_sizing.scss';
-@import './mixins/breakpoint.scss';
-@import './mixins/convertpxtorem.scss';
-@import './mixins/direction.scss';
-@import './mixins/fontFamily.scss';
-@import './mixins/keyframe.scss';
-@import './mixins/position.scss';
-@import './mixins/transition.scss';
+/* ===============================================================================
+   Table Of Content
+   ===============================================================================
+    1. Common
+    2. Font size
+*/
+
+/* ===============================================================================
+    2. Common
+   ===============================================================================
+*/
+
+a:hover {
+  color: $colorRed;
+  text-decoration: none;
+}
+
+label {
+  color: #6c757d;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.c-white {
+  color: white;
+}
+
+.sw__btn {
+  background-color: transparent;
+  border: 1px solid $colorRed;
+  color: $white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: $colorRed;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    width: 51%;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+  &:hover {
+    &:before,
+    &:after {
+      width: 0;
+    }
+    color: $colorRed;
+  }
+}
+
+/* ===============================================================================
+    2. Font size
+   ===============================================================================
+*/
+
+.f14 {
+  font-size: 14px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f20 {
+  font-size: 20px;
+}
+
+.ptb70 {
+  padding: 70px 0;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

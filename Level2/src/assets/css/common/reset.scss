@@ -1,0 +1,73 @@
+/* ===============================================================================
+   1. Reset Css
+   ===============================================================================
+*/
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+body {
+  background: #ffffff none repeat scroll 0 0;
+  color: #687188;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #292b2c;
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: #687188;
+  line-height: 28px;
+  margin: 0;
+}
+
+a {
+  color: #292b2c;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+a:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+fieldset {
+  border: 0 none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+

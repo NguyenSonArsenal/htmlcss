@@ -1,0 +1,20 @@
+/* ===============================================================================
+    3. Footer
+   ===============================================================================
+*/
+.footer__bottom {
+  background: #202325;
+  padding: 30px 0;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .footer p.c-white {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
